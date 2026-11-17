@@ -2,7 +2,7 @@
 
 Personal developer portfolio and interactive bio card for Namish Mahajan (`@satoru0xx`). Engineered from scratch using vanilla HTML5, CSS3, and JavaScript without external libraries or frameworks.
 
-**Live Site:** [namish-portfolio.netlify.app](https://netlify.app)
+**Live Site:** [namish-portfolio.netlify.app](https://netlify.app)]
 
 ## Features
 - **Interactive Entry Gate:** Custom boot screen designed to handle browser audio autoplay policies cleanly.
