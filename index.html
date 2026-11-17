@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>♛ NAMISH MAHAJAN ♛ | satoru0xx</title>
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Looping Local/Hosted Audio Track -->
+  <audio id="bg-music" loop preload="auto"></audio>
+
+  <!-- Interactive Particle Constellation Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Click to Start Boot Screen -->
+  <div id="enter-screen" class="enter-screen">
+    <div class="enter-box">
+      <div class="scanner-line"></div>
+      <p class="boot-text" id="boot-header">[ SYSTEM READY // USER: SATORU0XX ]</p>
+      <h2 class="glitch-btn">CLICK TO START</h2>
+      <p class="sub-boot" id="boot-sub">Initialize Audio & 3D Developer Interface</p>
+    </div>
+  </div>
+
+  <!-- Main Portfolio Interface -->
+  <main id="main-interface" class="main-interface hidden">
+    <!-- Top Clock & Theme Bar -->
+    <div class="top-hud">
+      <div class="hud-pill">
+        <span class="pulse-dot"></span>
+        <span id="live-clock">00:00:00 IST</span>
+      </div>
+      <div class="theme-switcher" title="Switch Neon Accent">
+        <button class="theme-dot active" data-theme="violet" style="background:#7c3aed;"></button>
+        <button class="theme-dot" data-theme="cyan" style="background:#06b6d4;"></button>
+        <button class="theme-dot" data-theme="crimson" style="background:#f43f5e;"></button>
+      </div>
+    </div>
+
+    <!-- Floating Audio Controller -->
+    <div class="audio-hud">
+      <button id="audio-toggle" title="Play/Pause">▶</button>
+      <div class="equalizer" id="equalizer">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <span class="track-name" id="track-status">Teapot - LuKremBo (Loop)</span>
+      <span class="vol-icon">🔊</span>
+      <input type="range" id="volume-slider" min="0" max="1" step="0.05" value="0.5">
+    </div>
+
+    <!-- 3D Tilt Glass Profile Card -->
+    <section class="profile-card" id="tilt-card">
+      <div class="card-glare" id="card-glare"></div>
+
+      <div class="card-header">
+        <div class="avatar-ring">
+          <img id="profile-avatar" src="avatar.png" alt="Namish Mahajan">
+          <span class="status-dot" title="Online & Coding"></span>
+        </div>
+
+        <h1 class="crown-title">♛ <span id="display-name">NAMISH MAHAJAN</span> ♛</h1>
+        <p class="handle" id="display-meta">@satoru0xx • Age 13 • India</p>
+
+        <div class="typewriter-box">
+          <span class="prompt">~$</span>
+          <span id="typewriter"></span><span class="cursor">|</span>
+        </div>
+      </div>
+
+      <!-- Interactive Skill Badges -->
+      <div class="skills-ribbon" id="skills-container"></div>
+      <p id="skill-detail-box" class="skill-detail"></p>
+
+      <!-- Info Cards -->
+      <div class="info-grid">
+        <div class="info-box">
+          <span class="label">🎯 CAREER GOAL</span>
+          <p id="display-goal">Software Engineering</p>
+        </div>
+        <div class="info-box">
+          <span class="label">🎮 INTERESTS</span>
+          <p id="display-interests">Gaming & Emerging Tech</p>
+        </div>
+      </div>
+
+      <!-- Live GitHub Telemetry -->
+      <div class="github-section">
+        <div class="gh-header">
+          <span id="gh-title">⚡ GITHUB TELEMETRY (satoru0xx)</span>
+          <span id="gh-repo-count" class="badge">Syncing...</span>
+        </div>
+        <div id="gh-repos" class="repo-list">
+          <div class="repo-item"><span>Fetching live repositories...</span></div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="social-dock" id="social-container"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
