@@ -1,4 +1,4 @@
-# Namish-portfolio
+# namish-portfolio
 
 Personal developer portfolio and interactive bio card for Namish Mahajan (`@satoru0xx`). Engineered from scratch using vanilla HTML5, CSS3, and JavaScript without external libraries or frameworks.
 
